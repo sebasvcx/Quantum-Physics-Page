@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simposio de Física Cuántica</title>
+  <title>Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,28 +25,112 @@
 
   <main>
     <section id="inicio">
-        <h1>Simposio de Física Cuántica 2025</h1>
-        <p>Explora los avances más recientes en física cuántica con expertos de talla internacional.</p>
-        <div class="cta">
-            <a class="btn btn--primary" href="#registro">Regístrate ahora</a>
-            <a class="btn" href="#programa">Ver programa</a>
-            <a class="btn" href="#posters">Envío de pósters</a>
-        </div>
+      <h1>Simposio de Física Cuántica 2025</h1>
+      <p>Explora los avances más recientes en física cuántica con expertos de talla internacional.</p>
+      <div class="org-logos" style="display:flex; gap:1rem; align-items:center; margin:.4rem 0 1rem; flex-wrap:wrap;">
+        <img src="images/javeriana.png" alt="Pontificia Universidad Javeriana" style="height:36px; filter: drop-shadow(0 0 0 rgba(0,0,0,0.0));">
+        <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" style="height:36px;">
+      </div>
+      <div class="cta">
+        <a class="btn btn--primary" href="#registro">Regístrate ahora</a>
+        <a class="btn btn--outline" href="#programa">Ver programa</a>
+        <a class="btn btn--outline" href="#posters">Envío de pósters</a>
+      </div>      
     </section>
 
     <section id="acerca">
       <h2>Acerca del Simposio</h2>
       <p>Este evento reúne a estudiantes, investigadores y expertos en temas como computación cuántica, metrología y relatividad.</p>
+      <p><strong>Organizan:</strong> Pontificia Universidad Javeriana y Universidad Distrital Francisco José de Caldas.</p>
     </section>
 
     <section id="invitados">
-      <h2>Invitados</h2>
-      <p>Próximamente encontrarás aquí las biografías y resúmenes de las charlas de nuestros ponentes.</p>
-    </section>
+        <h2>Invitados</h2>
+        <p>Próximamente encontrarás aquí las biografías y resúmenes de las charlas de nuestros ponentes.</p>
+        
+        
+        <div class="grid grid-3" style="margin-top:1rem;">
+        <div class="card">
+        <img class="square" src="images/invitado1.jpg" alt="Foto del ponente">
+        <h3>Dr. Nombre Apellido</h3>
+        <p><strong>Afiliación:</strong> Universidad Ejemplo</p>
+        <p><strong>Título de la charla:</strong> Tema de investigación actual</p>
+        <p style="margin:.5rem 0 1rem; color:var(--muted);">Resumen breve de la charla (placeholder).</p>
+        <div style="display:flex; gap:.5rem; flex-wrap:wrap;">
+        <a class="btn btn--primary btn--sm" href="#programa">Ver resumen</a>
+        <a class="btn btn--outline btn--sm" href="#">Perfil académico</a>
+        </div>
+        </div>
+        </div>
+        </section>
 
     <section id="programa">
-      <h2>Programa</h2>
-      <p>Incluye sesiones de pósters, charlas magistrales, coffee breaks y más.</p>
+        <h3>Día 1 — Jueves 4 de septiembre</h3>
+        <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Hora</th>
+                  <th>Actividad</th>
+                  <th>Ponente</th>
+                  <th>Lugar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08:00 - 08:30</td>
+                  <td>Registro y bienvenida</td>
+                  <td>Comité organizador</td>
+                  <td>Auditorio principal</td>
+                </tr>
+                <tr>
+                  <td>08:30 - 09:30</td>
+                  <td>Charla magistral: Introducción a la computación cuántica</td>
+                  <td>Dr. Juan Pérez</td>
+                  <td>Auditorio principal</td>
+                </tr>
+                <tr>
+                  <td>09:30 - 10:00</td>
+                  <td>Coffee break ☕</td>
+                  <td>-</td>
+                  <td>Zona de descanso</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <h3>Día 2 — Viernes 5 de septiembre</h3>
+        <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Hora</th>
+                  <th>Actividad</th>
+                  <th>Ponente</th>
+                  <th>Lugar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08:00 - 08:30</td>
+                  <td>Registro y bienvenida</td>
+                  <td>Comité organizador</td>
+                  <td>Auditorio principal</td>
+                </tr>
+                <tr>
+                  <td>08:30 - 09:30</td>
+                  <td>Charla magistral: Introducción a la computación cuántica</td>
+                  <td>Dr. Juan Pérez</td>
+                  <td>Auditorio principal</td>
+                </tr>
+                <tr>
+                  <td>09:30 - 10:00</td>
+                  <td>Coffee break ☕</td>
+                  <td>-</td>
+                  <td>Zona de descanso</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
     </section>
 
     <section id="posters">
@@ -55,9 +139,9 @@
     </section>
 
     <section id="registro">
-      <h2>Registro</h2>
-      <p>Formulario de registro próximamente disponible.</p>
-    </section>
+        <h2>Registro</h2>
+        <p>Formulario de registro próximamente disponible. También puedes revisar la <a href="#programa" class="btn--ghost">programación completa</a>.</p>
+        </section>
 
     <section id="lugar">
       <h2>Lugar</h2>
@@ -81,7 +165,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Simposio de Física Cuántica</p>
+    <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
+    <p>© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
+    <p>Desarrollado por el Comité de Organización Estudiantil</p>
   </footer>
 </body>
 </html>
