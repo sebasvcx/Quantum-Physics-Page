@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa — Simposio de Física Cuántica 2025</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-brand">
+        <h3>Simposio Física Cuántica</h3>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="acerca.html">Acerca del Simposio</a></li>
+          <li><a href="invitados.html">Invitados</a></li>
+          <li><a href="programa.html">Programa</a></li>
+          <li><a href="posters.html">Envío de Posters</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="lugar.html">Lugar</a></li>
+          <li><a href="comite.html">Comité</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Programa</h1>
+      
+      <h3>Día 1 — Jueves 4 de septiembre</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+              <th>Ponente</th>
+              <th>Lugar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00 - 08:30</td>
+              <td>Registro y bienvenida</td>
+              <td>Comité organizador</td>
+              <td>Auditorio principal</td>
+            </tr>
+            <tr>
+              <td>08:30 - 09:30</td>
+              <td>Charla magistral: Introducción a la computación cuántica</td>
+              <td>Dr. Juan Pérez</td>
+              <td>Auditorio principal</td>
+            </tr>
+            <tr>
+              <td>09:30 - 10:00</td>
+              <td>Coffee break ☕</td>
+              <td>-</td>
+              <td>Zona de descanso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <h3>Día 2 — Viernes 5 de septiembre</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Actividad</th>
+              <th>Ponente</th>
+              <th>Lugar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:00 - 08:30</td>
+              <td>Registro y bienvenida</td>
+              <td>Comité organizador</td>
+              <td>Auditorio principal</td>
+            </tr>
+            <tr>
+              <td>08:30 - 09:30</td>
+              <td>Charla magistral: Introducción a la computación cuántica</td>
+              <td>Dr. Juan Pérez</td>
+              <td>Auditorio principal</td>
+            </tr>
+            <tr>
+              <td>09:30 - 10:00</td>
+              <td>Coffee break ☕</td>
+              <td>-</td>
+              <td>Zona de descanso</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
+    <p>© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
+    <p>Desarrollado por el Comité de Organización Estudiantil</p>
+  </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
